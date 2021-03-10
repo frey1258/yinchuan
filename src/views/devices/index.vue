@@ -175,25 +175,25 @@ export default {
         handleView(e, i) {
             // this.$router.push({ path: '/device/info', query: { id: e.id } })
             let targetUrl = '/default/deviceInfo'
-            let id = 0
+            let type =0
             if (e.type === '基础实验台') {
-                id = 1
+                type =1
             } else if (e.type === '三轴') {
-                id = 2
+                type =2
             } else if (e.type === '过程控制') {
-                id = 3
+                type =3
             } else if (e.type === '柔性产线') {
-                id = 4
+                type =4
             } else if (e.type === '微电网') {
-                id = 5
+                type =5
             } else if (e.type === '数控机床') {
-                id = 6
+                type =6
             } else if (e.type === '摄像头') {
                 return
             } else if (e.type === '风光互补') {
-                id = 8
+                type =8
             }
-            let routeData = this.$router.resolve({ path: targetUrl, query: { id: id } })
+            let routeData = this.$router.resolve({ path: targetUrl, query: { type: type } })
             window.open(routeData.href, '_blank');
         },
         handleDelete(e) {

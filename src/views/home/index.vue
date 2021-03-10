@@ -40,7 +40,7 @@
                     <div class="neirv">
                         <div class="leffv">
                             <div class="tsdf2">{{form.classesCount}}</div>
-                            <div class="betvew">班级数据</div>
+                            <div class="betvew">班级总数</div>
                         </div>
                         <i class="iconfont iconbanji icons"></i>
                     </div>
